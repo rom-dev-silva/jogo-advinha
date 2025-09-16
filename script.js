@@ -1,7 +1,7 @@
 const maxTentativas = 5;
 let numeroMagico;
 let tentativas;
-let tempoRestante = 60;
+let tempoRestante = 30;
 let intervaloTempo = null;
 let cronometroIniciado = false;
 let pontosUsuario = 0;
@@ -19,7 +19,7 @@ const pontosServidorEl = document.getElementById("pontosServidor");
 function iniciarJogo() {
   numeroMagico = Math.floor(Math.random() * 10) + 1;
   tentativas = 0;
-  tempoRestante = 60;
+  tempoRestante = 30;
   cronometroIniciado = false;
   cronometro.textContent = tempoRestante;
   mensagem.textContent = "";
@@ -29,6 +29,8 @@ function iniciarJogo() {
   entrada.value = "";
   entrada.focus();
   clearInterval(intervaloTempo);
+
+  iniciarCronometro();
 }
 
 function iniciarCronometro() {
