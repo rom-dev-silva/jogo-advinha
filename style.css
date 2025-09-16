@@ -1,0 +1,72 @@
+/* Fundo com degradê rosa → azul */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff69b4, #1e90ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Container com efeito fosco e borda neon */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff69b4, 0 0 20px #1e90ff;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Estilo do placar */
+#placar {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Campo de entrada */
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Botões 3D */
+.btn3d {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+  box-shadow: 0 5px #aaa;
+  color: #333;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.2s;
+}
+
+.btn3d:active {
+  box-shadow: 0 2px #888;
+  transform: translateY(3px);
+}
+
+.btn3d:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mensagem do jogo */
+#mensagem {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
