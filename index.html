@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Jogo do Número Mágico</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="img/favicon.png" />
 
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container">
-    <h1>🎯 Jogo do Número Mágico</h1>
 
-    <div id="placar">
-      👤 Jogador: <span id="pontosUsuario">0</span> |
-      🤖 Servidor: <span id="pontosServidor">0</span>
+<body class="d-flex justify-content-center align-items-center vh-100 text-white">
+
+  <div class="container text-center">
+
+    <div class="card game-card mx-auto p-4">
+
+      <h1 class="mb-3">🎯 Jogo do Número Mágico</h1>
+
+      <p class="fw-bold">
+        👤 Jogador: <span id="pontosUsuario">0</span> |
+        🤖 Servidor: <span id="pontosServidor">0</span>
+      </p>
+
+      <h2 id="cronometro" class="mb-3">60</h2>
+
+      <p>Digite um número entre 1 e 10:</p>
+
+      <input 
+        type="number" 
+        id="entrada" 
+        class="form-control text-center mb-3"
+        min="1" max="10" 
+        placeholder="Seu palpite..."
+      >
+
+      <div class="d-flex justify-content-center gap-2">
+
+        <button id="tentarBtn" class="btn game-btn">
+          Tentar
+        </button>
+
+        <button id="reiniciarBtn" class="btn game-btn" disabled>
+          Jogar Novamente
+        </button>
+
+      </div>
+
+      <p id="mensagem" class="mt-4 fw-bold"></p>
+
     </div>
 
-    <p id="cronometro">60</p>
-
-    <p>Digite um número entre 1 e 10:</p>
-    <input type="number" id="entrada" min="1" max="10" placeholder="Seu palpite..." />
-
-    <div class="botoes">
-      <button id="tentarBtn" class="btn3d">Tentar</button>
-      <button id="reiniciarBtn" class="btn3d" disabled>Jogar Novamente</button>
-    </div>
-
-    <p id="mensagem"></p>
   </div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
