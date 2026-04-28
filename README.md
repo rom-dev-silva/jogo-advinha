@@ -1,42 +1,81 @@
 # 🎯 Jogo do Número Mágico
 
-Um jogo simples feito em **HTML**, **CSS** e **JavaScript** onde você tenta adivinhar um número mágico entre 1 e 10. O jogo tem cronômetro ⏱️ de 60 segundos, placar 🏆 para jogador e servidor, e botões estilosos em 3D 🎮.
+Um jogo simples e interativo onde o jogador tenta adivinhar um número aleatório entre 1 e 10 dentro de um tempo limite.
 
 ---
 
-## 🎮 Como jogar
+## 🚀 Tecnologias utilizadas
 
-1. Digite um número entre 1 e 10 no campo 🎲  
-2. Clique no botão **Tentar** 🔍  
-3. O jogo dará dicas se o número mágico é maior ou menor 🔼🔽  
-4. Você tem 5 tentativas ou 60 segundos ⏰ para acertar  
-5. Se errar, o servidor ganha ponto 🤖; se acertar, você ganha 🎉  
-6. Use o botão **Jogar Novamente** 🔄 para reiniciar o jogo  
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap 5
 
 ---
 
-## 💻 Tecnologias utilizadas
+## 🆕 Atualizações recentes
 
-- 🌐 HTML5  
-- 🎨 CSS3 (degradê de fundo, container transparente com bordas neon)  
-- ⚙️ JavaScript (DOM, eventos, cronômetro com setInterval)  
+### ✨ Integração com Bootstrap
+
+O projeto foi atualizado com a implementação do Bootstrap para melhorar a estrutura e responsividade da interface.
+
+**Principais melhorias:**
+
+* Layout mais organizado utilizando o sistema de grid
+* Componentes reutilizáveis como `container`, `card` e `buttons`
+* Melhor responsividade em diferentes dispositivos
+* Código mais limpo e padronizado
 
 ---
 
-## 🚀 Como rodar o projeto
+## 🎮 Funcionalidades
 
-1. Baixe ou clone o repositório 📥  
-2. Abra o arquivo `index.html` no navegador 🌐  
-3. Comece a jogar e se divertir! 😄  
+* Contador de tempo (cronômetro)
+* Sistema de pontuação (jogador vs servidor)
+* Validação de entrada (números entre 1 e 10)
+* Feedback em tempo real (acerto/erro)
+* Botão de reinício
+
+---
+
+## 🎨 Interface
+
+A interface combina Bootstrap com CSS customizado para criar:
+
+* Efeito glassmorphism
+* Gradiente de fundo moderno
+* Botões com efeito 3D estilo game
+
+---
+
+## 📱 Responsividade
+
+O projeto agora é totalmente responsivo, adaptando-se a:
+
+* Desktop
+* Tablet
+* Dispositivos móveis
+
+---
+
+## 💡 Aprendizados
+
+Durante o desenvolvimento e atualização do projeto, foram aplicados conceitos como:
+
+* Integração de frameworks CSS (Bootstrap)
+* Organização de layout com grid system
+* Separação entre estrutura (HTML), estilo (CSS) e lógica (JavaScript)
+
+---
+
+## 📌 Status do projeto
+
+✅ Em desenvolvimento
+🚀 Melhorias contínuas sendo aplicadas
 
 ---
 
 ## 👨‍💻 Autor
 
-Seu Nome Aqui
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a **MIT License**.
+Romulo Silva
+Desenvolvedor Front-End
